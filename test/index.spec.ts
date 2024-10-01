@@ -16,7 +16,7 @@ beforeAll(() => {
 
 afterEach(() => fetchMock.assertNoPendingInterceptors());
 
-test('test', async () => {
+test('test ', async () => {
 	vi.spyOn(globalThis, 'fetch').mockImplementation(async (input, init) => {
 		const request = new Request(input, init);
 		const url = new URL(request.url);
