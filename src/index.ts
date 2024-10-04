@@ -1,7 +1,7 @@
 interface Env {
 	CACHE: KVNamespace;
 }
-export default {
+  {
 	async fetch(request, env, ctx): Promise<Response> {
 		async function sha256(message: string) {
 			// encode as UTF-8
